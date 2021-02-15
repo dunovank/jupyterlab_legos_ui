@@ -12,7 +12,8 @@ Legos light ui and syntax theme for jupyterlab
 * JupyterLab >= 3.0
 
 ## Install
-* ***NOTE:*** After installing and launching `jupyter lab`, the theme still needs to be enabled: *Settings > JupyterLab Theme > @dunovank/jupyterlab_legos_ui*
+***NOTE:*** After installing and launching `jupyter lab`, the theme still needs to be enabled:
+***Settings > JupyterLab Theme > @dunovank/jupyterlab_legos_ui***
 
 ```bash
 pip install jupyterlab_legos_ui
