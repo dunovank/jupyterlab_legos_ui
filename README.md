@@ -17,6 +17,74 @@ Legos light ui and syntax theme for jupyterlab
 pip install jupyterlab_legos_ui
 ```
 
+### Uninstall
+
+```bash
+pip uninstall jupyterlab_legos_ui
+jupyter labextension uninstall @dunovank/jupyterlab_legos_ui
+```
+
+> TODO
+- Bring more fancy ui like in https://github.com/timkpaine/jupyterlab_miami_nights:
+
+## Develop
+
+```bash
+# Build the extension and link for dev in shell 1.
+jupyter labextension develop --overwrite
+```
+
+```bash
+# List extensions.
+jupyter labextension list
+pip list | grep  jupyterlab_legos_ui
+```
+
+```bash
+# Run and watch jupyterlab in shell 1.
+jlpm watch
+```
+
+```bash
+# Run and watch jupyterlab in shell 2.
+# Look at the remote entry javascript, a webpack5 feature.
+mkdir ~/notebooks && \
+  jupyter lab \
+    --dev-mode \
+    --watch \
+    --notebook-dir=~/notebooks \
+    --ServerApp.token= \
+    --extensions-in-dev-mode
+```
+
+## Build
+
+```bash
+# Generate sourcemaps.
+jupyter labextension build --development True .
+jupyter lab build --minimize=False
+```
+
+```bash
+# Do not generate sourcemaps.
+jupyter labextension build .
+jupyter lab build
+```
+
+## Publish
+
+```bash
+pip install jupyter_packaging twine && \
+  python setup.py sdist bdist_wheel && \
+  twine upload dist/*
+```
+
+```bash
+jlpm build:lib && \
+  npm publish --access public
+```
+
+
 ## Contributing
 
 ### Development install
@@ -53,11 +121,4 @@ By default, the `jlpm run build` command generates the source maps for this exte
 
 ```bash
 jupyter lab build --minimize=False
-```
-
-### Uninstall
-
-```bash
-pip uninstall jupyterlab_legos_ui
-jupyter labextension uninstall @dunovank/jupyterlab_legos_ui
 ```
