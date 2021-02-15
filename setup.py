@@ -72,6 +72,8 @@ setup_args = dict(
     packages=setuptools.find_packages(),
     install_requires=[
         "jupyterlab>=3.0.0,==3.*",
+        "nbconvert=5.6.1",
+        "jedi<0.18.0"
     ],
     zip_safe=False,
     include_package_data=True,
@@ -86,6 +88,7 @@ setup_args = dict(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Framework :: Jupyter",
     ],
 )

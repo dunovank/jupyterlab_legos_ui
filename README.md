@@ -2,8 +2,10 @@
 
 ![Github Actions Status](https://github.com/dunovank/jupyterlab_legos_ui/workflows/Build/badge.svg)
 
-legos light ui and syntax theme for jupyterlab
+Legos light ui and syntax theme for jupyterlab
 
+## Preview
+![](./jupyterlab_legos_ui.png)
 
 ## Requirements
 

@@ -13,7 +13,8 @@ const extension: JupyterFrontEndPlugin<void> = {
   requires: [IThemeManager],
   autoStart: true,
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension @dunovank/jupyterlab_legos_ui is activated!');
+    // console.log('JupyterLab extension @dunovank/jupyterlab_legos_ui is activated!');
+    console.log(`⏎······'JupyterLab·extension·@dunovank/jupyterlab_legos_ui·is·activated!'⏎····`);
     const style = '@dunovank/jupyterlab_legos_ui/index.css';
 
     manager.register({
