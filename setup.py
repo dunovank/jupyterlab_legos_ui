@@ -72,8 +72,8 @@ setup_args = dict(
     packages=setuptools.find_packages(),
     install_requires=[
         "jupyterlab>=3.0.0,==3.*",
-        "nbconvert=5.6.1",
-        "jedi<0.18.0"
+        "nbconvert==5.6.1",
+        "jedi==0.17.2"
     ],
     zip_safe=False,
     include_package_data=True,
