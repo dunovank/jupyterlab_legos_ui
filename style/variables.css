@@ -271,7 +271,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
-  --jp-cell-inprompt-font-color: #307fc1;
+  --jp-cell-inprompt-font-color: #2280cc;
   /* A custom blend of MD grey and orange 600
    * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
   --jp-cell-outprompt-font-color: #bf5b3d;
@@ -294,13 +294,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   );
 
   /* Rendermime styles */
-
-  --jp-rendermime-error-background: #fdd;
+  --jp-rendermime-error-background: #c0c3c92f;
   --jp-rendermime-table-row-background: var(--md-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-table-row-hover-background: #00afff3b;
 
   /* Dialog specific styles */
-
   --jp-dialog-background: rgba(0, 0, 0, 0.25);
 
   /* Console specific styles */
@@ -330,6 +328,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-editor-selected-background: rgba(23, 44, 168, .08);
   --jp-editor-selected-focused-background: rgba(63, 124, 248, .13);
   --jp-editor-cursor-color: #f65d22;
+
+  /* Rendermime styles */
+
+  --jp-rendermime-error-background: var(--jp-layout-color0);
+  --jp-rendermime-table-row-background: var(--jp-border-color2);
+  --jp-rendermime-table-row-hover-background: #01aef33a;
+  --jp-table-odd-rows: var(--jp-layout-color0);
+  --jp-table-even-rows: var(--jp-layout-color1);
+  --jp-table-header-background: var(--jp-border-color0);
 
   /* Code mirror specific styles */
 
@@ -362,7 +369,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Vega extension styles */
 
   --jp-vega-background: #F5F5F5;
-
+  --jp-dialog-background: rgba(0, 0, 0, 0.25);
   /* Sidebar-related styles */
 
   --jp-sidebar-min-width: 180px;
@@ -371,7 +378,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-editor-cursor: medium solid #f65d22;
   --jp-cell-inprompt-background: #ededed;
   --jp-md-cell-inprompt-background: #ffffff;
-  --jp-cell-inprompt-font-color: #888888;
+  --jp-cell-inprompt-font-color: #1669f2;
   --jp-cell-editor-active-background: #f4f4f4;
   --jp-cell-editor-border-color:  #f6f6f6;
   --jp-cell-editor-border-color-inactive: #f6f6f6;
@@ -693,6 +700,24 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     border-bottom-right-radius: 6px;
 }
 
+
+/* ########################################################*/
+/*                   DATAFRAMES/TABLES                     */
+/* ########################################################*/
+.jp-RenderedHTMLCommon tbody tr:nth-child(odd) {
+    background: var(--jp-table-odd-rows);
+}
+.jp-RenderedHTMLCommon tbody tr:nth-child(even) {
+    background: var(--jp-table-even-rows);
+}
+.jp-RenderedHTMLCommon tbody tr:hover {
+    background: var(--jp-rendermime-table-row-hover-background) !important;
+}
+.jp-RenderedHTMLCommon thead {
+    border-bottom: 2px solid var(--jp-inverse-layout-color0);
+    vertical-align: bottom;
+    background: var(--jp-table-odd-rows);
+}
 
 
 /* ########################################################*/
