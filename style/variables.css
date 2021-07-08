@@ -554,16 +554,20 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     height: var(--jp-private-launcher-card-size);
     margin: 5px;
     padding: 0px;
-    border: 2px solid var(--jp-layout-color2);
     background: var(--jp-layout-color1);
+    border: 1px solid var(--jp-layout-color2);
     box-shadow: none;
     transition: 0.2s;
     border-radius: var(--jp-border-radius);
 }
 .jp-LauncherCard:hover {
     box-shadow: none;
+    color: var(--jp-ui-font-color0);
     background: var(--jp-layout-color2);
+    border: 1px solid var(--jp-layout-color2);
+    border-radius: var(--jp-border-radius);
 }
+
 
 
 
