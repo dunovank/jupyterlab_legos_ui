@@ -1,6 +1,6 @@
 {
   "name": "@dunovank/jupyterlab_legos_ui",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "legos light ui and syntax theme for jupyterlab",
   "keywords": [
     "jupyter",
