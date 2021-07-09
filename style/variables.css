@@ -740,7 +740,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     opacity: 1;
     background: var(--jp-cell-inprompt-background);
     font-weight: normal;
-    color: var(--jp-cell-inprompt-font-color);
+    color: var(--jp-content-font-color3) !important;
 }
 .jp-Notebook .jp-Cell .jp-InputPrompt {
     visibility: visible;
@@ -816,7 +816,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     padding: var(--jp-code-padding);
     letter-spacing: var(--jp-cell-prompt-letter-spacing);
     line-height: var(--jp-code-line-height);
-    font-size: var(--jp-code-font-size);
+    font-size: 12px !important;
     border: var(--jp-border-width) solid transparent;
     opacity: var(--jp-cell-prompt-opacity);
     text-align: right;
