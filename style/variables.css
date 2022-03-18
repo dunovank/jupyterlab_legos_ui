@@ -322,6 +322,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
+  /* Statusbar specific styles */
+
+  --jp-statusbar-height: 26px;
+
   /* General editor styles */
 
   --jp-editor-selected-background: rgba(23, 44, 168, .08);
